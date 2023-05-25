@@ -1,0 +1,155 @@
+//get local storage value
+@import "../styles/variables.scss";
+
+body,
+html {
+  font-family: "Arial", "Neuton", "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+.pt5 {
+  padding-top: 5%;
+}
+
+.mt5 {
+  margin-top: 5%;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.App {
+  .HomePage {
+    height: 100%;
+    width: 100%;
+    background: #22112d url("../images/header-bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    .HeaderHomerPage {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .p-body-before {
+      width: 100%;
+      height: 60px;
+      background: url("../images/content-top-bg.png") no-repeat top center;
+    }
+
+    .p-body-after {
+      width: 100%;
+      height: 20px;
+      background: url("../images/content-bottom-bg.png") no-repeat top center;
+    }
+
+    .ForumHomePage {
+      height: 70%;
+      width: 100%;
+      background-color: wheat;
+      background: url("../images/content-middle-bg.png") repeat-y center center;
+    }
+
+    .OutsideHomePage {
+      .upgradeAccountCta {
+        background: url("../images/upgrade-account-cta.png");
+        background-size: contain;
+        height: 233px;
+        background-attachment: local;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .upgradeAccountCta-body {
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 4%;
+          padding: 8px 10px 17px 10px;
+          background: rgba(0, 0, 0, 0.5);
+          text-align: center;
+
+          h3 {
+            margin: 0;
+            font-family: Neuton, serif;
+            font-size: 21px;
+            color: #af00b1;
+          }
+
+          h4 {
+            margin: 0;
+            color: white;
+          }
+
+          .button.button--cta,
+          a.button.button--cta {
+            padding: 3%;
+            border-radius: 5%;
+            text-decoration: none;
+            color: #000;
+            background: #ffc02e;
+            border-color: #ffc848 #ffb815 #ffb815 #ffc848;
+          }
+        }
+      }
+
+      .RecentThreads {
+        border: 1px solid rgba(0, 0, 0, 0.583);
+        border-radius: 5%;
+        h3 {
+          color: #8847ff;
+          margin: 0;
+          margin-top: 5%;
+        }
+
+        h5 {
+          font-size: 15px;
+          font-weight: 500;
+          margin: 2%;
+        }
+        p {
+          opacity: 0.5;
+          font-size: 12px;
+          margin: 2%;
+        }
+
+        .containerThreads {
+          padding: 5% 0 5% 0;
+        }
+      }
+    }
+
+    .FooterHomePage {
+      min-height: 30vh;
+      background: #13001e;
+      color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .AllRights {
+        display: flex;
+        justify-content: center;
+        background: #09000f;
+        width: 100%;
+        margin-top: 2%;
+        padding: 2%;
+      }
+    }
+  }
+}
